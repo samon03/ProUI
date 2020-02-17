@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ProUI</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="images/flash.png" type="shortcut icon"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="This is a blueberryCharts.js demo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- blueberryCharts.css -->
+    <link rel="stylesheet" href="src/blueberryCharts.css">
+    <!-- master.css is only for custom styling elements -->
+    <link rel="stylesheet" href="src/master.css">
+
+
+	<!-- Bootstrap -->
+	<link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- NProgress -->
+	<link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+	<!-- iCheck -->
+	<link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+	<!-- bootstrap-progressbar -->
+	<link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+	<!-- JQVMap -->
+	<link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+	<!-- bootstrap-daterangepicker -->
+	<link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+	<!-- Custom Theme Style -->
+	<link href="build/css/custom.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<!-- new -->
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+					<div class="navbar nav_title">
+						<h4>
+							<a href="index.html"><i class="fa fa-bolt"></i> 
+								<span>
+									<b>Pro</b>UI
+								</span>
+							</a>
+						</h4>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<!-- menu profile quick info -->
+					<div class="profile clearfix">
+						<div class="profile_pic">
+							<img src="images/avatar2.jpg" alt="..." class="img-circle profile_img">
+						</div>
+						<div class="profile_info">
+							<span style="color: #fff; font-size: 20px;">John Doe</span>
+							<h2>
+								<span class="profile_icon">
+									<i class="fa fa-user"></i>
+									<i class="fa fa-envelope-o"></i>
+									<i class="fa fa-cog"></i>
+									<i class="fa fa-sign-out"></i>
+								</span>
+							</h2>
+						</div>
+					</div>
+					<!-- /menu profile quick info -->
+
+					<!-- Theme color -->
+					<div class="theme">
+						<ul>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<a href=""></a>
+							</li>
+						</ul>
+					</div>
+					<!-- Theme color -->
+
+					<!-- sidebar menu -->
+					<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+						<div class="menu_section">
+							<!-- <h3>General</h3> -->
+							<ul class="nav side-menu">
+								<li><a><i class="fa fa-home"></i> Dashboard</span></a>
+
+								</li>
+								<li><a><i class="fa fa-envira"></i> Dashboard2</a>
+								</li>
+								<li><a><i class="fa fa-envelope-o"></i> Email Template</a>
+								</li>
+								<li><a><i class="fa fa-shopping-cart "></i>eCommerce <span class="fa fa-chevron-left" id="arrowBtn1"></span></a>
+									<ul class="nav child_menu" id="aep">
+										<li><a href="form.html">General Form</a></li>
+										<li><a href="form_advanced.html">Advanced Components</a></li>
+										<li><a href="form_validation.html">Form Validation</a></li>
+										<li><a href="form_wizards.html">Form Wizard</a></li>
+										<li><a href="form_upload.html">Form Upload</a></li>
+										<li><a href="form_buttons.html">Form Buttons</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">
+										<span class="menu_header">WIDGET KIT
+											<span class="fa fa-wrench" id="menu_header_icon"></span>
+											<span class="fa fa-lightbulb-o" id="menu_header_icon"></span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a>
+										<i class="fa fa-bar-chart-o"></i> Statistics
+									</a>
+								</li>
+								<li>
+									<a>
+										<i class="fa fa-share-alt"></i> Social 
+									</a>
+								</li>
+								<li><a><i class="fa fa-film"></i> Media</a>
+								</li>
+								<li><a><i class="fa fa-link"></i>Link</a>
+								</li>
+								<li>
+									<a href="">
+										<span class="menu_header" id="heading">DESIGN KIT
+											<span class="fa fa-wrench" id="menu_header_icon"></span>
+										</span>
+									</a>
+								</li>
+								<li><a>
+									<i class="fa fa-window-restore"></i>User Interface<span class="fa fa-chevron-left" id="arrowBtn2"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="form.html">General Form</a></li>
+										<li><a href="form_advanced.html">Advanced Components</a></li>
+										<li><a href="form_validation.html">Form Validation</a></li>
+										<li><a href="form_wizards.html">Form Wizard</a></li>
+										<li><a href="form_upload.html">Form Upload</a></li>
+										<li><a href="form_buttons.html">Form Buttons</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-wpforms"></i>Forms<span class="fa fa-chevron-left"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="form.html">General Form</a></li>
+										<li><a href="form_advanced.html">Advanced Components</a></li>
+										<li><a href="form_validation.html">Form Validation</a></li>
+										<li><a href="form_wizards.html">Form Wizard</a></li>
+										<li><a href="form_upload.html">Form Upload</a></li>
+										<li><a href="form_buttons.html">Form Buttons</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-table"></i>Table <span class="fa fa-chevron-left"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="form.html">General Form</a></li>
+										<li><a href="form_advanced.html">Advanced Components</a></li>
+										<li><a href="form_validation.html">Form Validation</a></li>
+										<li><a href="form_wizards.html">Form Wizard</a></li>
+										<li><a href="form_upload.html">Form Upload</a></li>
+										<li><a href="form_buttons.html">Form Buttons</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-columns"></i>Page Layout <span class="fa fa-chevron-left"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="form.html">General Form</a></li>
+										<li><a href="form_advanced.html">Advanced Components</a></li>
+										<li><a href="form_validation.html">Form Validation</a></li>
+										<li><a href="form_wizards.html">Form Wizard</a></li>
+										<li><a href="form_upload.html">Form Upload</a></li>
+										<li><a href="form_buttons.html">Form Buttons</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="">
+										<span class="menu_header" id="heading">DEPLOY KIT
+											<span class="fa fa-wrench" id="menu_header_icon"></span>
+										</span>
+									</a>
+								</li>
+								<li><a><i class="fa fa-paint-brush"></i>
+									Ready Page<span class="fa fa-chevron-left"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="form.html">General Form</a></li>
+										<li><a href="form_advanced.html">Advanced Components</a></li>
+										<li><a href="form_validation.html">Form Validation</a></li>
+										<li><a href="form_wizards.html">Form Wizard</a></li>
+										<li><a href="form_upload.html">Form Upload</a></li>
+										<li><a href="form_buttons.html">Form Buttons</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-gear"></i>
+									Components<span class="fa fa-chevron-left"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="form.html">General Form</a></li>
+										<li><a href="form_advanced.html">Advanced Components</a></li>
+										<li><a href="form_validation.html">Form Validation</a></li>
+										<li><a href="form_wizards.html">Form Wizard</a></li>
+										<li><a href="form_upload.html">Form Upload</a></li>
+										<li><a href="form_buttons.html">Form Buttons</a></li>
+									</ul>
+								</li>
+								<li style="height: 800px;">
+									
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+					<!-- /sidebar menu -->
+				</div>
+			</div>
+			<!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<div class="nav toggle">
+						<a href=""> <i class="fa fa-wrench"></i></a>	
+					</div>
+					<div class="col-md-8">
+						<div id="reportrange" style="">Search..
+							<b class="caret"></b>
+						</div>
+					</div>     
+					<nav class="nav navbar-nav">
+						<ul class=" navbar-right">
+							<li class="nav-item dropdown open" style="padding-left: 15px;">
+								<a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+									<img src="images/avatar2.jpg" alt="">
+								</a>
+								<div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"  href="javascript:;">Update <i class="fa fa-bug" style="float: right;"></i> </a>
+									<a class="dropdown-item"  href="javascript:;"> Message</a>
+									<a class="dropdown-item"  href="javascript:;"> Subscription</a>
+									<a class="dropdown-item"  href="javascript:;"> FAQ</a>
+									<a class="dropdown-item"  href="javascript:;"> Profile</a>
+									<a class="dropdown-item"  href="javascript:;">
+										<span class="badge bg-red pull-right">50%</span>
+										<span>Settings</span>
+									</a>
+									<a class="dropdown-item"  href="javascript:;">Help</a>
+									<a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+								</div>
+							</li>
+
+							<li role="presentation" class="nav-item dropdown open">
+								<a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-share-alt"></i>
+									<span class="badge bg-green">4</span>
+								</a>
+								<ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+									<li class="nav-item">
+										<a class="dropdown-item">
+											<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+											<span>
+												<span>John Smith</span>
+												<span class="time">3 mins ago</span>
+											</span>
+											<span class="message">
+												Film festivals used to be do-or-die moments for movie makers. They were where...
+											</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="dropdown-item">
+											<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+											<span>
+												<span>John Smith</span>
+												<span class="time">3 mins ago</span>
+											</span>
+											<span class="message">
+												Film festivals used to be do-or-die moments for movie makers. They were where...
+											</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="dropdown-item">
+											<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+											<span>
+												<span>John Smith</span>
+												<span class="time">3 mins ago</span>
+											</span>
+											<span class="message">
+												Film festivals used to be do-or-die moments for movie makers. They were where...
+											</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="dropdown-item">
+											<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+											<span>
+												<span>John Smith</span>
+												<span class="time">3 mins ago</span>
+											</span>
+											<span class="message">
+												Film festivals used to be do-or-die moments for movie makers. They were where...
+											</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<div class="text-center">
+											<a class="dropdown-item">
+												<strong>See All Alerts</strong>
+												<i class="fa fa-angle-right"></i>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /top navigation -->
+			<!--  background image -->
+			<div id="header_img" >
+				<div id="header_opa" class="right_col">
+					<div class="row">
+						<div class="col-md-12" style="color: #fff;">
+							<div class="col-md-4">
+								<h4>Welcome <b>Samon!</b></h4>
+								<p>You look awesome</p>
+							</div>
+							<div class="col-md-8">
+								<div class="col-sm-2">
+									<h3>$<b>93.6</b></h3>
+									<p><i class="fa fa-thumbs-o-up"></i> Great</p> 
+								</div>
+								<div class="col-sm-2">
+									<h3><b>167k</b></h3>
+									<p><i class="fa fa-heart"></i> Likes</p> 
+								</div>
+								<div class="col-sm-2">
+									<h3><b>101</b></h3>
+									<p><i class="fa fa-calendar-o"></i> Event</p> 
+								</div>
+								<div class="col-sm-2">
+									<h3><b>27° C</b></h3>
+									<p><i class="fa fa-map-marker"></i> Sydney</p> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  background image -->
+			<!-- 4 cards -->
+			<div class="right_col">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-6">
+							<div class="col-md-6">
+								<div class="tile-stats">
+									<div class="icon_back">
+										<ul class="circle_card">
+											<li class="circle_img">
+												<a href="">
+													<i class="fa fa-file-text"></i>
+												</a>
+											</li>
+											<li class="circle_txt">
+												<h6 class="icon_text_right">
+													<STRONG>New Artical</STRONG>
+													<br>
+													<small>Mountain trip</small>
+												</h6>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--   modify -->
+							<div class="col-md-6">
+								<div class="tile-stats">
+									<div class="icon_back">
+										<ul class="circle_card">
+											<li class="circle_img">
+												<a href="">
+													<i class="fa fa-dollar" style="background-color: #27ae60; font-weight: bold; font-size: 26px;"></i>
+												</a>
+											</li>
+											<li class="circle_txt">
+												<h6 class="icon_text_right">
+													<STRONG>New Artical</STRONG>
+													<br>
+													<small>Mountain trip</small>
+												</h6>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-6">
+								<div class="tile-stats">
+									<div class="icon_back">
+										<ul class="circle_card">
+											<li class="circle_img">
+												<a href="">
+													<i class="fa fa-envelope" style="background-color: #e74c3c"></i>
+												</a>
+											</li>
+											<li class="circle_txt">
+												<h6 class="icon_text_right">
+													<STRONG>New Artical</STRONG>
+													<br>
+													<small>Mountain trip</small>
+												</h6>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="tile-stats">
+									<div class="icon_back">
+										<ul class="circle_card">
+											<li class="circle_img">
+												<a href="">
+													<i class="fa fa-image" style="background-color: #af64cc;"></i>
+												</a>
+											</li>
+											<li class="circle_txt">
+												<h6 class="icon_text_right">
+													<STRONG>New Artical</STRONG>
+													<br>
+													<small>Mountain trip</small>
+												</h6>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 4 cards -->
+			<!--  2 cards -->
+			<div class="right_col">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="tile-stats">
+									<div class="icon_back_c2">
+										<ul class="circle_card_c2">
+											<li class="circle_img_c2">
+												<a href="">
+													<i class="fa fa-suitcase"></i>
+												</a>
+
+											</li>
+											<li class="circle_txt_c2">
+												<h6 class="icon_text_right">
+													<STRONG>Latest Sales</STRONG>
+													<br>
+													<small>Per hour</small>
+												</h6>
+											</li>
+											<li class="circle_chart_c2">
+												<div class="chart_rand">
+													<script src="chart1.js"></script>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="tile-stats">
+									<div class="icon_back_c2">
+										<ul class="circle_card_c2">
+											<li class="circle_img_c2">
+												<a href="">
+													<i class="zmdi zmdi-local-airport"></i>
+												</a>
+											</li>
+											<li class="circle_txt_c2">
+												<h6 class="icon_text_right">
+													<STRONG>Latest Sales</STRONG>
+													<br>
+													<small>Per hour</small>
+												</h6>
+											</li>
+											<li class="circle_chart_c2">
+												<div class="chart_tri">
+													<script src="chart2.js"></script>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  2 cards -->
+			<!-- Timeline -->
+			<div class="timeline">
+				<div class="right_col">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- timeline -->
+							<div class="col-md-6">
+								<div class="col-md-12">
+									<div class="timeline_head">
+										<div class="timeline_icon">
+											<span><i class="fa fa-pencil"></i></span>
+											<span><i class="fa fa-gear"></i></span>
+										</div>
+										<div class="timeline_txt">
+											<h2>Latest <b>News </b><a href="">View all</a></h2>
+										</div>
+									</div>
+
+									<div class="timeline_body">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<ul class="cbp_tmtimeline">
+														<li>
+															<time class="cbp_tmtime" datetime="2017-11-04T03:45"><span>Just now</span></time>
+															<div class="cbp_tmicon bg-info">
+																<i class="zmdi zmdi-local-airport"></i>
+															</div>
+															<div class="cbp_tmlabel">
+																<h2><a href="javascript:void(0);">Jordan Carter</a></h2>
+																<p>The trip was an amazing and a life changing experience!!</p>
+																<button class="readBtn"><i class="zmdi zmdi-file-text"></i> Read the artical</button>
+
+																<div class="pic_tm1">
+																	<span><a href=""><img src="images/photo1.jpg"></a></span>
+																	<span><a href=""><img src="images/photo22.jpg"></a></span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<time class="cbp_tmtime" datetime="2017-11-03T13:22"><span>5 min ago</span></time>
+															<div class="cbp_tmicon bg-green"> <i class="zmdi zmdi-file-text"></i></div>
+															<div class="cbp_tmlabel">
+																<h2><a href="javascript:void(0);">Administrator</a></h2>
+																<p>Free courses for all our customers at A1 Conference Room - 9:00 am tomorrow!</p>
+															</div>
+														</li>
+														<li>
+															<time class="cbp_tmtime" datetime="2017-10-22T12:13"><span>3 hours ago</span></time>
+															<div class="cbp_tmicon bg-blush"><i class="zmdi zmdi-pin"></i></div>
+															<div class="cbp_tmlabel">
+																<h2><a href="javascript:void(0);">Ella Winter</a></h2>
+																<blockquote>
+																	<p>
+																		Happy Hour! Free drinks at Cafe-Bar all day long!
+																	</p>
+																</blockquote>
+																<div class="row clearfix">
+																	<div class="col-lg-12">
+																		<div class="map m-t-10">
+																			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91477011208!2d-74.11976308802028!3d40.69740344230033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1508039335245" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+																		</div>
+																	</div>
+																</div>        					
+															</div>
+														</li>
+														<li>
+															<time class="cbp_tmtime" datetime="2017-10-22T12:13"><span>Yesterday</span></time>
+															<div class="cbp_tmicon bg-orange"><i class="zmdi zmdi-drink"></i></div>
+															<div class="cbp_tmlabel">
+																<h2><a href="javascript:void(0);">Patricia Woods</a></h2>
+																<p>Today I had the lunch of my life! It was delicious!</p>
+																<div class="pic_tm1">
+																	<span><a href=""><img src="images/photo1.jpg"></a></span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<time class="cbp_tmtime" datetime="2017-11-03T13:22"><span>2 days ago</span></time>
+															<div class="cbp_tmicon bg-green"> <i class="zmdi zmdi-mood"></i></div>
+															<div class="cbp_tmlabel">
+																<h2><a href="javascript:void(0);">Administrator</a></h2>
+																<p>To thank you all for your support we would like to let you know that you will receive free feature updates for life! You are awesome!</p>                            
+															</div>
+														</li>
+														<li>
+															<time class="cbp_tmtime" datetime="2017-10-22T12:13"><span>1 weeks ago</span></time>
+															<div class="cbp_tmicon bg-blush"><i class="zmdi zmdi-edit"></i></div>
+															<div class="cbp_tmlabel">
+																<h2><a href="javascript:void(0);"> Nicole Ward</a></h2>
+																<p>                          
+																	Consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum leo mi nec lectus. Nam commodo turpis id lectus scelerisque vulputate.
+																	Integer sed dolor erat. Fusce erat ipsum, varius vel euismod sed, tristique et lectus? Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque? Proin rhoncus dui at ligula vestibulum ut facilisis ante sodales! Suspendisse potenti. Aliquam tincidunt sollicitudin sem nec ultrices. Sed at mi velit. Ut egestas tempor est, in cursus enim venenatis eget! Nulla quis ligula ipsum. 
+																</p>                            
+															</div>
+														</li>
+														<li>
+															<div class="cbp_tmlabel">
+																<button class="viewBtn">View More..</button>
+															</div>
+														</li>
+													</ul>  
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- timeline end -->
+							<!-- Plan  -->
+							<div class="col-md-6">
+								<div class="col-md-12">
+									<div class="timeline_part">
+										<div class="timeline_head">
+											<div class="timeline_icon">
+												<span><i class="fa fa-pencil"></i></span>
+												<span><i class="fa fa-gear"></i></span>
+											</div>
+											<div class="timeline_txt">
+												<h2>Your <b>VIP Plan </b><a href="">Upgrade</a></h2>
+											</div>
+										</div>
+										<!-- 	Vip plan -->
+										<div class="vip_plan">
+											<div class="col-md-12" id="vip_plan">
+												<div class="col-md-3">
+													<h3><b>35</b><small>/50</small></h3>
+													<p><i class="fa fa-folder-open-o"></i> Projects</p> 
+												</div>
+												<div class="col-md-3">
+													<h3><b>25</b><small>/1GB</small></h3>
+													<p><i class="fa fa-hdd-o"></i> Storage</p> 
+												</div>
+												<div class="col-md-3">
+													<h3><b>65</b><small>/1k</small></h3>
+													<p><i class="fa fa-building"></i> Clients</p> 
+												</div>
+												<div class="col-md-3">
+													<h3><b>10</b><small>k</small></h3>
+													<p><i class="fa fa-envelope-o"></i> Emails</p> 
+												</div>
+											</div>
+										</div>
+									</div>	
+									<!-- 	Vip plan -->
+								</div> 
+								<!--   Sales chart -->
+								<div class="col-md-12" id="sales_chart">
+									<div class="sales_chart">
+										<div class="chart_img">
+
+											<div class="blueberryChart bChart" id="blueberryChart">
+												<div class="sales_txt">
+													<h4><b>Sales</b> & <b>Earnings</b></h4>
+													<h5>Last year</h5>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="col-md-4">
+												<h3>7.500</h3>
+												<p>Clients</p> 
+											</div>
+											<div class="col-md-4">
+												<h3>10.970</h3>
+												<p>Sales</p> 
+											</div>
+											<div class="col-md-4">
+												<h3>$31.230</h3>
+												<p>Earnings</p> 
+											</div>
+										</div>
+									</div>	
+								</div> 
+								<!--   Sales chart --> 
+								<!-- Weather Station -->
+								<div class="col-md-12" id="weather_Station">
+									<div class="weather_Station">
+										<div class="col-md-12">
+											<div class="wstation_img">
+												<div id="wstation_opa" >
+													<div class="col-md-12" style="margin-top: 20px; color: #fff;">
+														<div class="col-md-10">
+															<h4>Weather <b>Station</b></h4>
+															<span style="color: #fff"></span>
+															<p><i class="zmdi zmdi-navigation" style="margin-right: 5px;"></i>The Mountain</p>
+														</div>
+														<div class="col-md-2">
+															<span id="gear"><i class="fa fa-gear"></i></span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="wstation_txt">
+												<div class="row">
+                                         <div class="col-md-12" id="wstation_txt">
+											<div class="col-md-3">
+												<h3>10° <small>C</small></h3>
+												<p>Sunny</p> 
+											</div>
+											<div class="col-md-3">
+												<h3>80 <small>%</small></h3>
+												<p>Humidity</p> 
+											</div>
+											<div class="col-md-3">
+												<h3>60 <small>km/h</small></h3>
+												<p>Wind</p> 
+											</div>
+											<div class="col-md-3">
+												<h3>5 <small>km</small></h3>
+												<p>Visibility</p> 
+											</div>
+										</div>
+									
+											</div>
+											</div>
+										</div>
+									</div>
+									</div>
+								<!-- Weather Station -->
+								<!-- Awesome -->
+                                    <div class="col-md-12" id="weather_Station">
+									<div class="weather_Station">
+										<div class="col-md-12">
+											<div class="awesome_back">
+												<div class="col-md-12" style="margin-top: 20px; color: #fff; text-align: center;">
+														<h4>Awesome <b>Gallery</b></h4>
+															<span style="color: #fff"></span>
+															<h5>4 photos</h5>
+												</div>
+												<center>
+												<div class="awesome_icon">
+												<i class="fa fa-image"></i>
+											   </div>
+											   </center>
+											</div>
+											
+											<div class="awesome_img">
+												<div class="row">
+                                         <div class="col-md-12" id="awesome_gallery">
+											<div class="col-md-3">
+												<img src="images/photo15.jpg">
+											</div>
+											<div class="col-md-3">
+												<img src="images/photo5.jpg">
+											</div>
+											<div class="col-md-3">
+												<img src="images/photo6.jpg">
+											</div>
+											<div class="col-md-3">
+												<img src="images/photo13.jpg"> 
+											</div>
+										</div>
+									
+											</div>
+											</div>
+										</div>
+									</div>
+									</div>
+								<!-- Awesome -->
+							</div> 
+							<!-- Plan end -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Timeline -->
+		</div>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+		<!-- JQuery Line Chart -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="src/blueberryCharts.js"></script>
+<script src="line_chart_plugin.js"></script>
+<script src="menu.js"></script>
+	</body>
+	</html>
